@@ -24,11 +24,15 @@ export default defineConfig({
             outDir: 'dist-electron',
             rollupOptions: {
               external: ['electron'],
+              output: {
+                format: 'cjs',
+                entryFileNames: '[name].cjs',
+                inlineDynamicImports: true,
+              },
             },
           },
         },
       },
-      renderer: {},
     }),
   ],
   build: {

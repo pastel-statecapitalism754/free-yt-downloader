@@ -42,7 +42,7 @@ const createWindow = () => {
     titleBarStyle: process.platform === 'darwin' ? 'hiddenInset' : 'default',
     autoHideMenuBar: true,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.mjs'),
+      preload: path.join(__dirname, 'preload.cjs'),
       contextIsolation: true,
       nodeIntegration: false,
       sandbox: false,
@@ -56,6 +56,20 @@ const createWindow = () => {
     win.webContents.openDevTools({ mode: 'detach' });
   } else {
     win.loadFile(path.join(RENDERER_DIST, 'index.html'));
+  }
+
+  win.webContents.on('did-fail-load', (_e, code, desc, url) => {
+    console.error('[renderer] did-fail-load', code, desc, url);
+  });
+  win.webContents.on('render-process-gone', (_e, details) => {
+    console.error('[renderer] render-process-gone', details);
+  });
+  win.webContents.on('console-message', (_e, level, message, line, source) => {
+    console.log(`[renderer:${level}] ${source}:${line} ${message}`);
+  });
+
+  if (process.env.OPEN_DEVTOOLS === '1') {
+    win.webContents.openDevTools({ mode: 'detach' });
   }
 
   win.webContents.setWindowOpenHandler(({ url }) => {
