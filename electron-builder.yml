@@ -1,0 +1,61 @@
+appId: com.freeyt.downloader
+productName: Free YT Downloader
+copyright: Free open-source software. Powered by yt-dlp + ffmpeg.
+directories:
+  output: release
+  buildResources: build
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - package.json
+extraResources:
+  - from: resources/bin
+    to: bin
+    filter:
+      - "**/*"
+asar: true
+asarUnpack:
+  - "**/*.{node,dll,dylib}"
+
+mac:
+  category: public.app-category.video
+  target:
+    - target: dmg
+      arch:
+        - arm64
+        - x64
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.plist
+  notarize: false
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+        - arm64
+    - target: portable
+      arch:
+        - x64
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  perMachine: false
+  artifactName: ${productName}-Setup-${version}-${arch}.${ext}
+
+linux:
+  category: AudioVideo
+  target:
+    - AppImage
+    - deb
+  maintainer: Free YT Downloader contributors
+  synopsis: Free open-source YouTube downloader
+  desktop:
+    Name: Free YT Downloader
+    Comment: Free open-source YouTube downloader
+    Categories: AudioVideo;Video;Network
+
+publish: null

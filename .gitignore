@@ -1,0 +1,19 @@
+node_modules
+dist
+dist-electron
+release
+resources/bin
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# editor
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# build artifacts
+build/icons
+*.tsbuildinfo
